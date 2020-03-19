@@ -16,6 +16,7 @@ ExecReload=/bin/kill -s HUP $MAINPID
 TimeoutSec=0
 RestartSec=2
 Restart=always
+Nice=-15
 
 # Note that StartLimit* options were moved from "Service" to "Unit" in systemd 229.
 # Both the old, and new location are accepted by systemd 229 and up, so using the old location
